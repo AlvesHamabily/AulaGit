@@ -1,0 +1,10 @@
+
+Aula Git
+ - Prof Marden
+
+01/03/2025
+
+criar um repositório local
+criar arquivo
+fazer commit do arquivo
+fazer push para um repositório remote no github
