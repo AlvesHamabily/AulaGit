@@ -7,4 +7,240 @@ Aula Git
 criar um repositório local
 criar arquivo
 fazer commit do arquivo
-fazer push para um repositório remote no github
+fazer push para um repositório remote no GitHub
+
+
+------cli - comandos
+
+mabia@pc_hamabily MINGW64 /c
+$ mkdir aulaGit
+
+mabia@pc_hamabily MINGW64 /c
+$ cd aulaGit
+
+mabia@pc_hamabily MINGW64 /c/aulaGit
+$ ls
+
+mabia@pc_hamabily MINGW64 /c/aulaGit
+$ git init
+Initialized empty Git repository in C:/aulaGit/.git/
+
+mabia@pc_hamabily MINGW64 /c/aulaGit (master)
+$ notepad exercicios.txt
+
+mabia@pc_hamabily MINGW64 /c/aulaGit (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        exercicios.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+mabia@pc_hamabily MINGW64 /c/aulaGit (master)
+$ git add ^C
+
+mabia@pc_hamabily MINGW64 /c/aulaGit (master)
+$ git add exercicios.txt
+
+mabia@pc_hamabily MINGW64 /c/aulaGit (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   exercicios.txt
+
+
+mabia@pc_hamabily MINGW64 /c/aulaGit (master)
+$ git commit -m "feat-criando arquivo de texto"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'mabia@pc_hamabily.(none)')
+
+mabia@pc_hamabily MINGW64 /c/aulaGit (master)
+$ git config --global user.e-mail "mabialves40@gmail.com"
+
+mabia@pc_hamabily MINGW64 /c/aulaGit (master)
+$ git config --global user.name "alveshamabily"
+
+mabia@pc_hamabily MINGW64 /c/aulaGit (master)
+$ git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/etc/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+user.e-mail=mabialves40@gmail.com
+user.name=alveshamabily
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+
+mabia@pc_hamabily MINGW64 /c/aulaGit (master)
+$ git commit -m "feat-criando arquivo de texto"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'mabia@pc_hamabily.(none)')
+
+mabia@pc_hamabily MINGW64 /c/aulaGit (master)
+$ git config --global user.e-mail "mabialves40@gmail.com"
+
+mabia@pc_hamabily MINGW64 /c/aulaGit (master)
+$ git config --global user.name "mabia"
+
+mabia@pc_hamabily MINGW64 /c/aulaGit (master)
+$ gif config --list
+bash: gif: command not found
+
+mabia@pc_hamabily MINGW64 /c/aulaGit (master)
+$ git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/etc/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+user.e-mail=mabialves40@gmail.com
+user.name=mabia
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+
+mabia@pc_hamabily MINGW64 /c/aulaGit (master)
+$ git commit -m "feat-criando arquivo de texto"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'mabia@pc_hamabily.(none)')
+
+mabia@pc_hamabily MINGW64 /c/aulaGit (master)
+$ ^C
+
+mabia@pc_hamabily MINGW64 /c/aulaGit (master)
+$git config --global user.email "mabialves40@gmail.com"
+bash: it: command not found
+
+mabia@pc_hamabily MINGW64 /c/aulaGit (master)
+$ git config --global user.email "mabialves40@gmail.com"
+
+mabia@pc_hamabily MINGW64 /c/aulaGit (master)
+$ git config --global user.name "alveshamabily"
+
+mabia@pc_hamabily MINGW64 /c/aulaGit (master)
+$ git commit -m "feat-criando arquivo de texto"
+[master (root-commit) f5bd8c4] feat-criando arquivo de texto
+ 1 file changed, 10 insertions(+)
+ create mode 100644 exercicios.txt
+
+mabia@pc_hamabily MINGW64 /c/aulaGit (master)
+$ git remote add origin https://github.com/AlvesHamabily/AulaGit.git
+
+mabia@pc_hamabily MINGW64 /c/aulaGit (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+mabia@pc_hamabily MINGW64 /c/aulaGit (master)
+$ git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/AlvesHamabily/AulaGit.git'
+
+mabia@pc_hamabily MINGW64 /c/aulaGit (master)
+$ git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/AlvesHamabily/AulaGit.git'
+
+mabia@pc_hamabily MINGW64 /c/aulaGit (master)
+$ git status
+bash: $'\302\203\302\203git': command not found
+
+mabia@pc_hamabily MINGW64 /c/aulaGit (master)
+$ git add .
+
+mabia@pc_hamabily MINGW64 /c/aulaGit (master)
+$ gi status
+bash: gi: command not found
+
+mabia@pc_hamabily MINGW64 /c/aulaGit (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+mabia@pc_hamabily MINGW64 /c/aulaGit (master)
+$ git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/AlvesHamabily/AulaGit.git'
+
+mabia@pc_hamabily MINGW64 /c/aulaGit (master)
+$ git push -u origin master
+info: please complete authentication in your browser...
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 345 bytes | 172.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/AlvesHamabily/AulaGit.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+mabia@pc_hamabily MINGW64 /c/aulaGit (master)
+$
